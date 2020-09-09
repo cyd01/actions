@@ -1,4 +1,4 @@
-iFROM golang:1.15.1
+FROM golang:1.15.1
 
 LABEL "name"="Go Builder"
 LABEL "maintainer"="Cyd <cyd@piratemind.com>"
