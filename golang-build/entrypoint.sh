@@ -17,15 +17,6 @@ release_path="$GITHUB_WORKSPACE/.release"
 repo_name="$(echo $GITHUB_REPOSITORY | cut -d '/' -f2)"
 targets=${@-"darwin/amd64 darwin/386 linux/amd64 linux/386 windows/amd64 windows/386"}
 
-echo "==> Debug <=="
-echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
-echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"
-echo "----> List GITHUB_WORKSPACE"
-ls -lR $GITHUB_WORKSPACE
-echo "----> List root_path"
-ls -lR $root_path
-echo "=====> <====="
-
 echo "----> Setting up Go repository"
 mkdir -p $release_path
 mkdir -p $root_path
