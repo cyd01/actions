@@ -23,6 +23,8 @@ mkdir -p $root_path
 cp -a $GITHUB_WORKSPACE/* $root_path/
 cd $root_path
 
+go get
+
 for target in $targets; do
   os="$(echo $target | cut -d '/' -f1)"
   arch="$(echo $target | cut -d '/' -f2)"
