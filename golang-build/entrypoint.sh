@@ -33,6 +33,10 @@ for target in $targets; do
   arch="$(echo $target | cut -d '/' -f2)"
   output="${release_path}/${repo_name}_${os}_${arch}"
 
+  if [ "${os}" = "windows" ] ; then
+    output="${output}.exe"
+  fi
+
   echo "----> Building project for: $target"
   GOOS=$os GOARCH=$arch CGO_ENABLED=0 go build -o $output
 
