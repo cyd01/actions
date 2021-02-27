@@ -26,6 +26,9 @@ mkdir -p $root_path
 cp -a $GITHUB_WORKSPACE/* $root_path/
 cd $root_path
 
+go mod init
+go mod tidy
+go mod vendor
 go get
 
 for target in $targets; do
