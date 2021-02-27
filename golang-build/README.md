@@ -2,7 +2,7 @@
 
 Github Action to cross-compile Go project binaries for multiple platforms in a single run.
 
-Uses `golang:1.13` Docker image with `CGO_ENABLED=0` flag.
+Uses `golang:1.21` Docker image with `CGO_ENABLED=0` flag.
 
 ## Usage
 

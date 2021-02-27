@@ -1,8 +1,8 @@
-FROM golang:1.15.1
+FROM golang:1.21
 
 LABEL "name"="Go Builder"
 LABEL "maintainer"="Cyd <cyd@piratemind.com>"
-LABEL "version"="0.3.0"
+LABEL "version"="0.3.1"
 
 LABEL "com.github.actions.name"="Go Builder"
 LABEL "com.github.actions.description"="Cross-complile Go programs"
